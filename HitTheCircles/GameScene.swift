@@ -9,37 +9,69 @@
 import SpriteKit
 
 class GameScene: SKScene {
+
+    let score = 0
+
+    // MARK: Setup Scene
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!"
-        myLabel.fontSize = 45
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-        
-        self.addChild(myLabel)
+
+        backgroundColor = SKColor.whiteColor()
+
+        runAction(SKAction.repeatActionForever(
+            SKAction.sequence([
+                SKAction.runBlock(addCircle),
+                SKAction.waitForDuration(1.0)
+                ])
+            ))
+
+        let scoreLabel = SKLabelNode(fontNamed: "Futura")
+        scoreLabel.text = String(score)
+
     }
-    
+
+    // MARK: Handle touches
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
         
         for touch in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+            let location = (touch as UITouch).locationInNode(self)
+            let touchedNode = self.nodeAtPoint(location)
+                if touchedNode.name == "circle" {
+                    touchedNode.removeFromParent()
+                }
         }
     }
-   
-    override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+
+    // MARK: Randomization helper methods
+    func random() -> CGFloat {
+        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
+    }
+
+    func random(min min: CGFloat, max: CGFloat) -> CGFloat {
+        return random() * (max - min) + min
+    }
+
+    // MARK: Create Sprites
+
+    func addCircle() {
+
+        let circle = SKSpriteNode(imageNamed: "circle")
+
+        circle.name = "circle"
+        circle.userInteractionEnabled = false
+
+        let yPos = random(min: circle.size.height/2, max: size.height - circle.size.height/2)
+        let xPos = random(min: circle.size.width/2, max: size.width - circle.size.width/2)
+
+        circle.position = CGPoint(x: xPos, y: yPos)
+
+        addChild(circle)
+
+        let actionScale = SKAction.scaleTo(0.0, duration: 2.0)
+
+        let actionScaleDone = SKAction.removeFromParent()
+
+        circle.runAction(SKAction.sequence([actionScale, actionScaleDone]))
+
     }
 }
