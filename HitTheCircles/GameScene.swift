@@ -10,7 +10,13 @@ import SpriteKit
 
 class GameScene: SKScene {
 
-    let score = 0
+    var scoreLabel: SKLabelNode!
+
+    var score: Int = 0 {
+        didSet {
+            scoreLabel.text = "\(score)"
+        }
+    }
 
     // MARK: Setup Scene
     override func didMoveToView(view: SKView) {
@@ -24,20 +30,26 @@ class GameScene: SKScene {
                 ])
             ))
 
-        let scoreLabel = SKLabelNode(fontNamed: "Futura")
-        scoreLabel.text = String(score)
+        scoreLabel = SKLabelNode(fontNamed: "Futura")
+        scoreLabel.text = "0"
+        scoreLabel.horizontalAlignmentMode = .Left
+        scoreLabel.fontSize = 24
+        scoreLabel.fontColor = SKColor.blackColor()
+        scoreLabel.position = CGPoint(x: 30.0, y: size.height - 30.0)
+        addChild(scoreLabel)
 
     }
 
     // MARK: Handle touches
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
-        
+
         for touch in touches {
             let location = (touch as UITouch).locationInNode(self)
             let touchedNode = self.nodeAtPoint(location)
                 if touchedNode.name == "circle" {
                     touchedNode.removeFromParent()
+                    score++
                 }
         }
     }
@@ -62,15 +74,11 @@ class GameScene: SKScene {
 
         let yPos = random(min: circle.size.height/2, max: size.height - circle.size.height/2)
         let xPos = random(min: circle.size.width/2, max: size.width - circle.size.width/2)
-
         circle.position = CGPoint(x: xPos, y: yPos)
-
         addChild(circle)
 
         let actionScale = SKAction.scaleTo(0.0, duration: 2.0)
-
         let actionScaleDone = SKAction.removeFromParent()
-
         circle.runAction(SKAction.sequence([actionScale, actionScaleDone]))
 
     }
