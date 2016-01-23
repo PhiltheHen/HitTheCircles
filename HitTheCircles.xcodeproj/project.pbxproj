@@ -15,6 +15,7 @@
 		3AFB7B8D1C542B4D00D09598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFB7B8B1C542B4D00D09598 /* LaunchScreen.storyboard */; };
 		3AFB7B981C542B4E00D09598 /* HitTheCirclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB7B971C542B4E00D09598 /* HitTheCirclesTests.swift */; };
 		3AFB7BA31C542B4E00D09598 /* HitTheCirclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB7BA21C542B4E00D09598 /* HitTheCirclesUITests.swift */; };
+		3AFB7BB11C54373E00D09598 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB7BB01C54373E00D09598 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3AFB7B9E1C542B4E00D09598 /* HitTheCirclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitTheCirclesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFB7BA21C542B4E00D09598 /* HitTheCirclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTheCirclesUITests.swift; sourceTree = "<group>"; };
 		3AFB7BA41C542B4E00D09598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AFB7BB01C54373E00D09598 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				3AFB7B7E1C542B4D00D09598 /* AppDelegate.swift */,
 				3AFB7B821C542B4D00D09598 /* GameScene.swift */,
+				3AFB7BB01C54373E00D09598 /* GameOverScene.swift */,
 				3AFB7B841C542B4D00D09598 /* GameViewController.swift */,
 				3AFB7B861C542B4D00D09598 /* Main.storyboard */,
 				3AFB7B891C542B4D00D09598 /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 			files = (
 				3AFB7B831C542B4D00D09598 /* GameScene.swift in Sources */,
 				3AFB7B851C542B4D00D09598 /* GameViewController.swift in Sources */,
+				3AFB7BB11C54373E00D09598 /* GameOverScene.swift in Sources */,
 				3AFB7B7F1C542B4D00D09598 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

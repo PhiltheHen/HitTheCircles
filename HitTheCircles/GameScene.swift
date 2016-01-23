@@ -18,6 +18,8 @@ class GameScene: SKScene {
         }
     }
 
+    var lives: Int = 3
+
     // MARK: Setup Scene
     override func didMoveToView(view: SKView) {
 
@@ -42,7 +44,6 @@ class GameScene: SKScene {
 
     // MARK: Handle touches
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
 
         for touch in touches {
             let location = (touch as UITouch).locationInNode(self)
@@ -64,7 +65,6 @@ class GameScene: SKScene {
     }
 
     // MARK: Create Sprites
-
     func addCircle() {
 
         let circle = SKSpriteNode(imageNamed: "circle")
@@ -79,7 +79,17 @@ class GameScene: SKScene {
 
         let actionScale = SKAction.scaleTo(0.0, duration: 2.0)
         let actionScaleDone = SKAction.removeFromParent()
-        circle.runAction(SKAction.sequence([actionScale, actionScaleDone]))
+
+        let loseAction = SKAction.runBlock() {
+            self.lives--
+            if (self.lives <= 0) {
+                let reveal = SKTransition.flipHorizontalWithDuration(0.5)
+                let gameOverScene = GameOverScene(size: self.size, score: self.score)
+                self.view?.presentScene(gameOverScene, transition: reveal)
+            }
+        }
+
+        circle.runAction(SKAction.sequence([actionScale, loseAction, actionScaleDone]))
 
     }
 }
