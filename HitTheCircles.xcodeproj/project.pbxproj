@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AFB7B7F1C542B4D00D09598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB7B7E1C542B4D00D09598 /* AppDelegate.swift */; };
+		3AFB7B811C542B4D00D09598 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3AFB7B801C542B4D00D09598 /* GameScene.sks */; };
+		3AFB7B831C542B4D00D09598 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB7B821C542B4D00D09598 /* GameScene.swift */; };
+		3AFB7B851C542B4D00D09598 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB7B841C542B4D00D09598 /* GameViewController.swift */; };
+		3AFB7B881C542B4D00D09598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFB7B861C542B4D00D09598 /* Main.storyboard */; };
+		3AFB7B8A1C542B4D00D09598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFB7B891C542B4D00D09598 /* Assets.xcassets */; };
+		3AFB7B8D1C542B4D00D09598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFB7B8B1C542B4D00D09598 /* LaunchScreen.storyboard */; };
+		3AFB7B981C542B4E00D09598 /* HitTheCirclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB7B971C542B4E00D09598 /* HitTheCirclesTests.swift */; };
+		3AFB7BA31C542B4E00D09598 /* HitTheCirclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB7BA21C542B4E00D09598 /* HitTheCirclesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AFB7B941C542B4E00D09598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AFB7B731C542B4D00D09598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AFB7B7A1C542B4D00D09598;
+			remoteInfo = HitTheCircles;
+		};
+		3AFB7B9F1C542B4E00D09598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AFB7B731C542B4D00D09598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AFB7B7A1C542B4D00D09598;
+			remoteInfo = HitTheCircles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AFB7B7B1C542B4D00D09598 /* HitTheCircles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitTheCircles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AFB7B7E1C542B4D00D09598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AFB7B801C542B4D00D09598 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		3AFB7B821C542B4D00D09598 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3AFB7B841C542B4D00D09598 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3AFB7B871C542B4D00D09598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AFB7B891C542B4D00D09598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AFB7B8C1C542B4D00D09598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AFB7B8E1C542B4D00D09598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AFB7B931C542B4E00D09598 /* HitTheCirclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitTheCirclesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AFB7B971C542B4E00D09598 /* HitTheCirclesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTheCirclesTests.swift; sourceTree = "<group>"; };
+		3AFB7B991C542B4E00D09598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AFB7B9E1C542B4E00D09598 /* HitTheCirclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitTheCirclesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AFB7BA21C542B4E00D09598 /* HitTheCirclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTheCirclesUITests.swift; sourceTree = "<group>"; };
+		3AFB7BA41C542B4E00D09598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AFB7B781C542B4D00D09598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFB7B901C542B4E00D09598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFB7B9B1C542B4E00D09598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AFB7B721C542B4D00D09598 = {
+			isa = PBXGroup;
+			children = (
+				3AFB7B7D1C542B4D00D09598 /* HitTheCircles */,
+				3AFB7B961C542B4E00D09598 /* HitTheCirclesTests */,
+				3AFB7BA11C542B4E00D09598 /* HitTheCirclesUITests */,
+				3AFB7B7C1C542B4D00D09598 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AFB7B7C1C542B4D00D09598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AFB7B7B1C542B4D00D09598 /* HitTheCircles.app */,
+				3AFB7B931C542B4E00D09598 /* HitTheCirclesTests.xctest */,
+				3AFB7B9E1C542B4E00D09598 /* HitTheCirclesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AFB7B7D1C542B4D00D09598 /* HitTheCircles */ = {
+			isa = PBXGroup;
+			children = (
+				3AFB7B7E1C542B4D00D09598 /* AppDelegate.swift */,
+				3AFB7B801C542B4D00D09598 /* GameScene.sks */,
+				3AFB7B821C542B4D00D09598 /* GameScene.swift */,
+				3AFB7B841C542B4D00D09598 /* GameViewController.swift */,
+				3AFB7B861C542B4D00D09598 /* Main.storyboard */,
+				3AFB7B891C542B4D00D09598 /* Assets.xcassets */,
+				3AFB7B8B1C542B4D00D09598 /* LaunchScreen.storyboard */,
+				3AFB7B8E1C542B4D00D09598 /* Info.plist */,
+			);
+			path = HitTheCircles;
+			sourceTree = "<group>";
+		};
+		3AFB7B961C542B4E00D09598 /* HitTheCirclesTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AFB7B971C542B4E00D09598 /* HitTheCirclesTests.swift */,
+				3AFB7B991C542B4E00D09598 /* Info.plist */,
+			);
+			path = HitTheCirclesTests;
+			sourceTree = "<group>";
+		};
+		3AFB7BA11C542B4E00D09598 /* HitTheCirclesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3AFB7BA21C542B4E00D09598 /* HitTheCirclesUITests.swift */,
+				3AFB7BA41C542B4E00D09598 /* Info.plist */,
+			);
+			path = HitTheCirclesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AFB7B7A1C542B4D00D09598 /* HitTheCircles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AFB7BA71C542B4E00D09598 /* Build configuration list for PBXNativeTarget "HitTheCircles" */;
+			buildPhases = (
+				3AFB7B771C542B4D00D09598 /* Sources */,
+				3AFB7B781C542B4D00D09598 /* Frameworks */,
+				3AFB7B791C542B4D00D09598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HitTheCircles;
+			productName = HitTheCircles;
+			productReference = 3AFB7B7B1C542B4D00D09598 /* HitTheCircles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AFB7B921C542B4E00D09598 /* HitTheCirclesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AFB7BAA1C542B4E00D09598 /* Build configuration list for PBXNativeTarget "HitTheCirclesTests" */;
+			buildPhases = (
+				3AFB7B8F1C542B4E00D09598 /* Sources */,
+				3AFB7B901C542B4E00D09598 /* Frameworks */,
+				3AFB7B911C542B4E00D09598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AFB7B951C542B4E00D09598 /* PBXTargetDependency */,
+			);
+			name = HitTheCirclesTests;
+			productName = HitTheCirclesTests;
+			productReference = 3AFB7B931C542B4E00D09598 /* HitTheCirclesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3AFB7B9D1C542B4E00D09598 /* HitTheCirclesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AFB7BAD1C542B4E00D09598 /* Build configuration list for PBXNativeTarget "HitTheCirclesUITests" */;
+			buildPhases = (
+				3AFB7B9A1C542B4E00D09598 /* Sources */,
+				3AFB7B9B1C542B4E00D09598 /* Frameworks */,
+				3AFB7B9C1C542B4E00D09598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AFB7BA01C542B4E00D09598 /* PBXTargetDependency */,
+			);
+			name = HitTheCirclesUITests;
+			productName = HitTheCirclesUITests;
+			productReference = 3AFB7B9E1C542B4E00D09598 /* HitTheCirclesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AFB7B731C542B4D00D09598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Phil Henson";
+				TargetAttributes = {
+					3AFB7B7A1C542B4D00D09598 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3AFB7B921C542B4E00D09598 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3AFB7B7A1C542B4D00D09598;
+					};
+					3AFB7B9D1C542B4E00D09598 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3AFB7B7A1C542B4D00D09598;
+					};
+				};
+			};
+			buildConfigurationList = 3AFB7B761C542B4D00D09598 /* Build configuration list for PBXProject "HitTheCircles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AFB7B721C542B4D00D09598;
+			productRefGroup = 3AFB7B7C1C542B4D00D09598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AFB7B7A1C542B4D00D09598 /* HitTheCircles */,
+				3AFB7B921C542B4E00D09598 /* HitTheCirclesTests */,
+				3AFB7B9D1C542B4E00D09598 /* HitTheCirclesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AFB7B791C542B4D00D09598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFB7B811C542B4D00D09598 /* GameScene.sks in Resources */,
+				3AFB7B8D1C542B4D00D09598 /* LaunchScreen.storyboard in Resources */,
+				3AFB7B8A1C542B4D00D09598 /* Assets.xcassets in Resources */,
+				3AFB7B881C542B4D00D09598 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFB7B911C542B4E00D09598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFB7B9C1C542B4E00D09598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AFB7B771C542B4D00D09598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFB7B831C542B4D00D09598 /* GameScene.swift in Sources */,
+				3AFB7B851C542B4D00D09598 /* GameViewController.swift in Sources */,
+				3AFB7B7F1C542B4D00D09598 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFB7B8F1C542B4E00D09598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFB7B981C542B4E00D09598 /* HitTheCirclesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFB7B9A1C542B4E00D09598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFB7BA31C542B4E00D09598 /* HitTheCirclesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AFB7B951C542B4E00D09598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AFB7B7A1C542B4D00D09598 /* HitTheCircles */;
+			targetProxy = 3AFB7B941C542B4E00D09598 /* PBXContainerItemProxy */;
+		};
+		3AFB7BA01C542B4E00D09598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AFB7B7A1C542B4D00D09598 /* HitTheCircles */;
+			targetProxy = 3AFB7B9F1C542B4E00D09598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AFB7B861C542B4D00D09598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AFB7B871C542B4D00D09598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AFB7B8B1C542B4D00D09598 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AFB7B8C1C542B4D00D09598 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AFB7BA51C542B4E00D09598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AFB7BA61C542B4E00D09598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AFB7BA81C542B4E00D09598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HitTheCircles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.henson.HitTheCircles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AFB7BA91C542B4E00D09598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HitTheCircles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.henson.HitTheCircles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3AFB7BAB1C542B4E00D09598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = HitTheCirclesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.henson.HitTheCirclesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HitTheCircles.app/HitTheCircles";
+			};
+			name = Debug;
+		};
+		3AFB7BAC1C542B4E00D09598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HitTheCirclesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.henson.HitTheCirclesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HitTheCircles.app/HitTheCircles";
+			};
+			name = Release;
+		};
+		3AFB7BAE1C542B4E00D09598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = HitTheCirclesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.henson.HitTheCirclesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HitTheCircles;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3AFB7BAF1C542B4E00D09598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HitTheCirclesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.henson.HitTheCirclesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HitTheCircles;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AFB7B761C542B4D00D09598 /* Build configuration list for PBXProject "HitTheCircles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFB7BA51C542B4E00D09598 /* Debug */,
+				3AFB7BA61C542B4E00D09598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AFB7BA71C542B4E00D09598 /* Build configuration list for PBXNativeTarget "HitTheCircles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFB7BA81C542B4E00D09598 /* Debug */,
+				3AFB7BA91C542B4E00D09598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3AFB7BAA1C542B4E00D09598 /* Build configuration list for PBXNativeTarget "HitTheCirclesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFB7BAB1C542B4E00D09598 /* Debug */,
+				3AFB7BAC1C542B4E00D09598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3AFB7BAD1C542B4E00D09598 /* Build configuration list for PBXNativeTarget "HitTheCirclesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFB7BAE1C542B4E00D09598 /* Debug */,
+				3AFB7BAF1C542B4E00D09598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AFB7B731C542B4D00D09598 /* Project object */;
+}
