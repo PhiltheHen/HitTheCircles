@@ -20,6 +20,8 @@ class GameScene: SKScene {
 
     var lives: Int = 3
 
+    var heartPositions = [CGPoint]()
+
     // MARK: Setup Scene
     override func didMoveToView(view: SKView) {
 
@@ -39,6 +41,14 @@ class GameScene: SKScene {
         scoreLabel.fontColor = SKColor.blackColor()
         scoreLabel.position = CGPoint(x: 30.0, y: size.height - 30.0)
         addChild(scoreLabel)
+
+        heartPositions = [CGPoint(x: size.width - 120, y: size.height-30),
+            CGPoint(x: size.width-80, y: size.height - 30),
+            CGPoint(x: size.width-40, y: size.height - 30)]
+
+        for point in heartPositions {
+            addHeart(point)
+        }
 
     }
 
@@ -81,6 +91,7 @@ class GameScene: SKScene {
         let actionScaleDone = SKAction.removeFromParent()
 
         let loseAction = SKAction.runBlock() {
+            self.removeHearts()
             self.lives--
             if (self.lives <= 0) {
                 let reveal = SKTransition.flipHorizontalWithDuration(0.5)
@@ -92,4 +103,22 @@ class GameScene: SKScene {
         circle.runAction(SKAction.sequence([actionScale, loseAction, actionScaleDone]))
 
     }
+
+    func addHeart(atPoint: CGPoint) {
+        let heart = SKSpriteNode(imageNamed: "heart")
+        heart.name = "heart"
+        heart.position = atPoint
+        addChild(heart)
+    }
+
+    func removeHearts() {
+        for point in heartPositions {
+            let touchedNode = self.nodeAtPoint(point)
+            if touchedNode.name == "heart" {
+                touchedNode.removeFromParent()
+                return
+            }
+        }
+    }
+
 }

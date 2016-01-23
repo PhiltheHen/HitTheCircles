@@ -30,8 +30,6 @@ class GameOverScene: SKScene {
         scoreLabel.position = CGPoint(x: size.width/2, y: size.height/2 - 24)
         addChild(scoreLabel)
 
-
-
         runAction(SKAction.sequence([SKAction.waitForDuration(3.0), SKAction.runBlock() {
             let reveal = SKTransition.flipHorizontalWithDuration(0.5)
             let scene = GameScene(size: size)
