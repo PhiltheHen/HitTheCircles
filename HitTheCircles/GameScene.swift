@@ -10,6 +10,7 @@ import SpriteKit
 
 class GameScene: SKScene {
 
+    // Score properties
     var scoreLabel: SKLabelNode!
 
     var score: Int = 0 {
@@ -18,21 +19,37 @@ class GameScene: SKScene {
         }
     }
 
+    // Lives properties
     var lives: Int = 3
-
     var heartPositions = [CGPoint]()
+
+    // Difficulty settings
+    var scaleDuration: Float = 2.0
+    var waitDuration: NSTimeInterval = 1.0
+
+    var difficulty: Int = 0 {
+        didSet {
+            if difficulty < 10 {
+                waitDuration = NSTimeInterval(1.0 - Double(difficulty)/10)
+            }
+        }
+    }
 
     // MARK: Setup Scene
     override func didMoveToView(view: SKView) {
 
         backgroundColor = SKColor.whiteColor()
+        // Using custom action function for now
 
-        runAction(SKAction.repeatActionForever(
-            SKAction.sequence([
-                SKAction.runBlock(addCircle),
-                SKAction.waitForDuration(1.0)
-                ])
-            ))
+//        runAction(SKAction.repeatActionForever(
+//            SKAction.sequence([
+//                SKAction.runBlock(addCircle),
+//                SKAction.waitForDuration(1.0)
+//                ])
+//            ))
+
+        // Start custom SKAction
+        addCirclesWithIncreasingDifficulty()
 
         scoreLabel = SKLabelNode(fontNamed: "Futura")
         scoreLabel.text = "0"
@@ -61,7 +78,23 @@ class GameScene: SKScene {
                 if touchedNode.name == "circle" {
                     touchedNode.removeFromParent()
                     score++
+                    if score >= 10 {
+                        difficulty = 5
+                        print("Wait Duration: \(waitDuration)")
+                    }
                 }
+        }
+
+
+    }
+
+    // MARK: Handle increasing difficulty
+    func addCirclesWithIncreasingDifficulty() {
+        runAction(SKAction.sequence([
+            SKAction.runBlock(addCircle),
+            SKAction.waitForDuration(NSTimeInterval(waitDuration))
+            ])) {
+                self.addCirclesWithIncreasingDifficulty()
         }
     }
 
@@ -82,9 +115,11 @@ class GameScene: SKScene {
         circle.name = "circle"
         circle.userInteractionEnabled = false
 
-        let yPos = random(min: circle.size.height/2, max: size.height - circle.size.height/2)
+        let yPos = random(min: circle.size.height/2, max: size.height - circle.size.height/2 - scoreLabel.fontSize - 30)
         let xPos = random(min: circle.size.width/2, max: size.width - circle.size.width/2)
+
         circle.position = CGPoint(x: xPos, y: yPos)
+
         addChild(circle)
 
         let actionScale = SKAction.scaleTo(0.0, duration: 2.0)
